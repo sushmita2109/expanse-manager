@@ -1,0 +1,74 @@
+.navbar{
+    background-color: white;
+    min-height: 10%;
+    margin: 0rem;
+    width: 100%;
+    display: inline-flex;
+}
+.brand{
+    display: inline-flex;
+    text-decoration: none;
+}
+.brandLogo{
+    height: 3rem;
+    display: flex;
+    align-items: flex-start;
+    margin: 1rem 1rem;
+}
+
+.brandName{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin: 2rem 0.5rem;
+}
+
+.listLink{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: right;
+    list-style: none;
+    width: 100%;
+   
+}
+.secLink{
+    text-decoration: none;
+    margin: 0.5rem 0.5rem;
+    color: #1CC29F;
+    font-weight: bold;
+    text-align: right;
+    text-align: right;
+    
+}
+.priLink{
+    text-decoration: none;
+    margin: 0.5rem 0.5rem;
+    color: white;
+    text-align: right;
+    text-align: right;
+    width: 100%;
+}
+.secondaryLink{
+    text-align: right;
+    padding: 15px 32px;
+    width: 100%;
+    font-size: 16px;
+   font-weight: bold;
+   border: none;
+   margin: 0.5rem 0.5rem;
+}
+
+.primaryLink{
+  background-color: #1CC29F; /* Green */
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 2px 5px;
+  color: black;
+  padding: 15px 32px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0.5rem 0.5rem;
+}

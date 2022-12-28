@@ -1,15 +1,16 @@
 import React from "react";
 import Logo from './split_logo.png';
 import {Link} from 'react-router-dom';
+import './styles/nav.css';
 
 export const Nav = () => {
     return (
         <>
-        <nav>
-            <a className="brandLogo" href="#"><img src={Logo} alt="Logo" /><h3>Splitwise</h3></a>
+        <nav className="navbar">
+            <a className="brand" href="#"><img className="brandLogo" src={Logo} alt="Logo" /><h3 className="brandName">Splitwise</h3></a>
             <ul className="listLink">
-                <li className="secondaryLink"><Link to='/login'>Login</Link></li>
-                <li className="primaryLink"><Link to='/signup'>Signup</Link></li>
+                <li className="secondaryLink"><Link className="secLink" to='/login'>Login</Link></li>
+                <li className="primaryLink"><Link className="priLink" to='/signup'>Signup</Link></li>
             </ul>
         </nav>
         </>
