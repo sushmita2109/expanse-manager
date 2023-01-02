@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import{faGoogle} from '@fortawesome/free-brands-svg-icons';
 import './styles/login.css';
 export const Login=()=>{
     return(
@@ -15,8 +17,14 @@ export const Login=()=>{
                     <span>I'm not a robot</span>
                     </label>
                     <button className="btn" type="submit">Login</button>
+                    <div className="passText">Forgot your password?</div>
+                    <div>------or------</div>
+                    <button className="googleBtn">
+                        <FontAwesomeIcon icon={faGoogle}></FontAwesomeIcon>
+                        <span className="googleText"> Sign in with Google</span>
+                    </button>
                 </form>
-                <div>Forgot your password?</div>
+                
             </main>
         </div>
     )

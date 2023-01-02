@@ -1,6 +1,6 @@
 .container{
   border-radius: 0.5rem;
-  width: 300px;
+  width: 35%;
   border: 1px solid black;
   padding: 5px;
   margin: auto;
@@ -26,6 +26,7 @@
     align-items: left;
     display: flex;
   align-items: flex-start;
+  
 }
 
 .textInput{
@@ -38,4 +39,26 @@
     background-color: #1CC29F;
     color: white;
     font-weight: bold;
+    border-radius: 0.2rem;
+    height: 2rem;
+}
+
+.passText{
+    color:#1CC29F ;
+    font-weight: bold;
+    margin: 0.5rem 0.5rem;
+}
+
+.googleBtn{
+    margin: 0.5rem 0.5rem;
+    background-color: white;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem;
+    border-radius: 0.2rem;
+    height: 2rem;
+}
+
+.googleText{
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
 }
