@@ -1,13 +1,14 @@
 import React from "react";
 import Logo from "./split_logo.png";
+import "./styles/welcomeScreen.css";
 
 export const WelcomeScreen = () => {
   return (
     <div>
-      <div className="">
-        <img src={Logo} alt="logo"></img>
+      <div className="welcomeMsg">
+        <img className="logo" src={Logo} alt="logo"></img>
         <h1>Welcome to Splitwise!</h1>
-        <h6>What would you like to do first?</h6>
+        <h6 className="">What would you like to do first?</h6>
       </div>
       <div>
         <button>Add your Apartment</button>

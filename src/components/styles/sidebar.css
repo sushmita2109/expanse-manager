@@ -1,0 +1,36 @@
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.sidebar{
+    display: flex;
+    flex-direction:column;
+    align-self: flex-start;
+}
+
+.headimage{
+    display: flex;
+    flex-direction: row;
+}
+
+.image{
+    width: 4%;
+    margin: 0.5rem 0.5rem;
+}
+
+.recent{
+    display: flex;
+    flex-direction: row;
+}
+
+.flagIcon{
+    width: 4%;
+    margin: 0.5rem 0.5rem;
+}
+
+.expensebars{
+   display: flex;
+   flex-direction: row;
+}
+

@@ -1,0 +1,8 @@
+.welcomeMsg{
+    display: flex;
+    margin-left: 25rem;
+}
+
+.logo{
+    width: 15%;
+}
