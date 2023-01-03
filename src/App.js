@@ -4,6 +4,7 @@ import { HomePage } from './components/homePage';
 import { Nav } from './components/nav';
 import { Login } from './components/login';
 import { SignUp } from './components/signUp';
+import { WelcomeScreen } from './components/welcomeScreen';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Route path="/" element={<HomePage/>}/>
       <Route path='login' element={<Login/>}/>
       <Route path='signup' element={<SignUp/>}/>
+      <Route path='welcome' element={<WelcomeScreen/>}/>
      </Routes>
      </div>
     </BrowserRouter>
