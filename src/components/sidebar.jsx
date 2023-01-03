@@ -9,7 +9,7 @@ export const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="headimage">
-        <img className="image" src={Logo} alt="" />
+        <img className="image" src={Logo} alt="logo" />
         <h3>Dashboard</h3>
       </div>
       <div className="recent">
@@ -18,10 +18,7 @@ export const Sidebar = () => {
       </div>
       <div className="expense">
         <div className="expensebars">
-          <FontAwesomeIcon
-            className="flag Icon"
-            icon={faBars}
-          ></FontAwesomeIcon>
+          <FontAwesomeIcon className="flagIcon" icon={faBars}></FontAwesomeIcon>
           <h3>All Expanses</h3>
         </div>
         <div className="group">
@@ -31,7 +28,7 @@ export const Sidebar = () => {
             "Add"
           </a>
         </div>
-        <div className="friends">
+        <div className="group">
           Friends
           <a href="#">
             <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>

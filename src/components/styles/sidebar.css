@@ -1,12 +1,13 @@
 .dashboard{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    /* justify-content: space-evenly; */
 }
 .sidebar{
     display: flex;
     flex-direction:column;
-    align-self: flex-start;
+    width: 15%;
 }
 
 .headimage{
@@ -34,3 +35,9 @@
    flex-direction: row;
 }
 
+.group{
+ display: flex;
+ flex-direction: row;
+ margin: 0.5rem 0.5rem;
+ background-color: grey;
+}
