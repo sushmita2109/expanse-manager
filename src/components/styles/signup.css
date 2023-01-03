@@ -1,0 +1,85 @@
+.container{
+    width: 55%;
+    padding: 2rem;
+    margin: auto;
+    height: 60%;
+  }
+
+.logo{
+    width:30%;
+    float: left;
+    margin: 1rem 1rem;
+}
+
+.headText{
+ font-size: 1.2rem;
+ font-weight: bold;
+ color: gray;
+ 
+}
+
+.subText{
+ font-size: 1.5rem;
+ margin-left: 4rem;
+ width: 70%;
+ color: black;
+ margin-bottom: 0.5rem;
+}
+
+.inputText{
+    height: 1.5rem;
+    margin-left: 4rem;
+    width: 55%;
+    margin-bottom: 1rem;
+}
+
+.buttonBlock{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.signupBtn{
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #FF652F;
+    border-radius: 0.5rem;
+    height: 4rem;
+    margin-bottom: 0.5rem;
+    width: 8rem;
+}
+
+.divide{
+    font-size: 1rem;
+    color: gray;
+}
+
+.googleBtn{
+    color: white;
+    height: 3rem;
+    border-radius: 0.5rem;
+
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.emailText{
+    margin-left: 3.8rem;
+    width: 50%;
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+.emailInput{
+    margin-left: 4rem;
+    width: 60%;
+    height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
