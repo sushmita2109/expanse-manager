@@ -8,6 +8,8 @@
     display: flex;
     flex-direction:column;
     width: 15%;
+    border-right: 6px solid black;
+    min-height: 10vh;
 }
 
 .headimage{
@@ -16,7 +18,7 @@
 }
 
 .image{
-    width: 4%;
+    width: 15%;
     margin: 0.5rem 0.5rem;
 }
 
@@ -40,4 +42,33 @@
  flex-direction: row;
  margin: 0.5rem 0.5rem;
  background-color: grey;
+ border-radius: 0.2rem;
+}
+
+.invite{
+    border: 2px solid black;
+    margin: 0.5rem 0.5rem;
+}
+
+.frndTxt{
+    background-color: #1CC29F;
+    margin: 0;
+}
+
+.formTxt{
+    margin: 0.5rem 0.5rem;
+}
+
+.socialBtn{
+    background-color: blue;
+    color: white;
+    margin: 0.5rem 0.5rem;
+    height: 2rem;
+    font-weight: bold;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    
 }

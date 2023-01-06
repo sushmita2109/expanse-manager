@@ -23,33 +23,39 @@ export const Sidebar = () => {
         </div>
         <div className="group">
           Groups
-          <a href="#">
+          <a className="link" href="#">
             <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>
-            "Add"
+            add
           </a>
         </div>
         <div className="group">
           Friends
-          <a href="#">
+          <a className="link" href="#">
             <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>
-            "add"
+            add
           </a>
         </div>
       </div>
-      <div>
-        <h3>Invite friends</h3>
-        <form>
-          <input type="text" />
+      <div className="invite">
+        <h3 className="frndTxt">Invite friends</h3>
+        <form className="formTxt">
+          <input type="text" placeholder="Enter an email address" />
           <button>Send Invites</button>
         </form>
       </div>
       <div>
-        <button>
-          <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
+        <button className="socialBtn">
+          <FontAwesomeIcon
+            style={{ color: "white" }}
+            icon={faFacebook}
+          ></FontAwesomeIcon>
           Share
         </button>
-        <button>
-          <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
+        <button className="socialBtn">
+          <FontAwesomeIcon
+            style={{ color: "white" }}
+            icon={faTwitter}
+          ></FontAwesomeIcon>
           Tweet
         </button>
       </div>
