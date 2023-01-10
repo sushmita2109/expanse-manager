@@ -33,6 +33,19 @@ export const Modal = (props) => {
             name="amount"
             placeholder="enter amount"
           />
+          <label htmlFor="payer-select">Paid by</label>
+          <select name="payer" id="payer-select">
+            <option value="">--Please choose an option--</option>
+            <option value="you">You</option>
+            <option value="others">Other</option>
+          </select>
+          <p>divide equally between</p>
+          <input
+            type="text"
+            id="friendname"
+            name="frndname"
+            placeholder="enter friends name"
+          />
         </div>
         <div className="modal-footer">
           <button
