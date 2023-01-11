@@ -17,11 +17,13 @@ export const Mainbar = () => {
   const deleteAllItems = () => {
     setExpenseList([]);
   };
-  const updateBoth = (desc, value) => {
+  const updateBoth = (desc, value, frnd, select) => {
     console.log({ desc, value });
     expenseList.push({
       description: desc,
       value: value.toString(),
+      frnd: frnd,
+      select: select,
     });
     console.log({ expenseList });
   };
@@ -29,7 +31,9 @@ export const Mainbar = () => {
     <div className="mainbar">
       <div className="allexpense">
         <h2>All expenses</h2>
-        <button onClick={() => setShow(true)}>Add an expense</button>
+        <button className="signupBtn" onClick={() => setShow(true)}>
+          Add an expense
+        </button>
         <Modal onDesc={updateBoth} onClose={() => setShow(false)} show={show} />
         <button className="btn" onClick={deleteAllItems}>
           Settle up all

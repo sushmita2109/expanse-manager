@@ -13,7 +13,20 @@ import { useState } from "react";
  */
 export const Card = ({ expenseList, deleteItem, show }) => {
   let visible = expenseList.length > 0;
+  const current = new Date();
+  const date = `${current.getDate()}/${
+    current.getMonth() + 1
+  }/${current.getFullYear()}`;
 
+  const amountPaid = (paidUser, expense = 0) => {
+    let amount = 0;
+    if (paidUser === "you") {
+      amount = expense / 2;
+    } else if (paidUser === "others") {
+      amount = expense / 2;
+    }
+    return amount;
+  };
   return (
     <div className="card">
       {!visible && (
@@ -37,8 +50,22 @@ export const Card = ({ expenseList, deleteItem, show }) => {
                 {expenseList.map((item, idx) => {
                   return (
                     <tr key={idx}>
-                      <td>{item.description}</td>
-                      <td>{item.value}</td>
+                      <td>{date}</td>
+                      <td>
+                        <h5>{item.description}</h5>
+                      </td>
+                      <td>
+                        <h5>
+                          {item.select} paid
+                          {item.value}
+                        </h5>
+                      </td>
+                      <td>
+                        <h5>
+                          {item.frnd} lent you{" "}
+                          {amountPaid(item.select, item.value)}
+                        </h5>
+                      </td>
                       <td>
                         <button onClick={() => deleteItem(item)}>Remove</button>
                       </td>
