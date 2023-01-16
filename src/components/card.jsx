@@ -18,14 +18,17 @@ export const Card = ({ expenseList, deleteItem, show }) => {
     current.getMonth() + 1
   }/${current.getFullYear()}`;
 
-  const amountPaid = (paidUser, expense = 0) => {
+  const amountPaid = (paidUser, expense = 0, frnd) => {
     let amount = 0;
+    let message;
     if (paidUser === "you") {
       amount = expense / 2;
+      message = "you lent " + amount;
     } else if (paidUser === "others") {
       amount = expense / 2;
+      message = frnd + " lent you " + amount;
     }
-    return amount;
+    return message;
   };
   return (
     <div className="card">
@@ -62,8 +65,7 @@ export const Card = ({ expenseList, deleteItem, show }) => {
                       </td>
                       <td>
                         <h5>
-                          {item.frnd} lent you{" "}
-                          {amountPaid(item.select, item.value)}
+                          {amountPaid(item.select, item.value, item.frnd)}
                         </h5>
                       </td>
                       <td>
