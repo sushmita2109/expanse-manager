@@ -5,9 +5,11 @@ import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 import "./styles/signup.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const SignUp = () => {
   const [isshow, setIsshow] = useState(false);
+  const navigate = useNavigate();
   return (
     <div className="container">
       <Link to="/">
@@ -37,7 +39,9 @@ export const SignUp = () => {
         )}
 
         <div className="buttonBlock">
-          <button className="signupBtn">Sign me up!</button>
+          <button className="signupBtn" onClick={() => navigate("/dashboard")}>
+            Sign me up!
+          </button>
           <div className="divide">or</div>
           <button className="googleBtn">
             <FontAwesomeIcon

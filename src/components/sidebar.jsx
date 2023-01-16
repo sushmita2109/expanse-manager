@@ -8,7 +8,7 @@ export const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="headimage">
-        <img className="image" src={Logo} alt="logo" />
+        <img className="imag" src={Logo} alt="logo" />
         <h3>Dashboard</h3>
       </div>
       <div className="recent">
