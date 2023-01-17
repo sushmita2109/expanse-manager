@@ -77,6 +77,7 @@ export const HomePage = () => {
       <small>
         Free for
         <a
+          className="applelink"
           style={{ textDecoration: "none", color: "black" }}
           href="https://apps.apple.com/us/app/splitwise/id458023433"
         >
@@ -84,6 +85,7 @@ export const HomePage = () => {
           <span> iphone,</span>
         </a>
         <a
+          className="androidlink"
           style={{ textDecoration: "none", color: "black" }}
           href="https://play.google.com/store/apps/details?id=com.Splitwise.SplitwiseMobile&pli=1"
         >
