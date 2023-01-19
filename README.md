@@ -1,3 +1,26 @@
+# Expanse Manager
+
+###### This application helps you to split bills among friends.
+
+## HomePage
+
+
+![screencapture-expansemanager-netlify-app-2023-01-19-12_19_09](https://user-images.githubusercontent.com/46422928/213374922-b9a3fe5b-0d7b-4f5e-9ba2-e3660674d562.png)
+
+## Login Page
+
+![screencapture-expansemanager-netlify-app-login-2023-01-19-12_21_51](https://user-images.githubusercontent.com/46422928/213375115-9962307d-2697-429c-8618-b81de8517b9d.png)
+
+## Singup Page
+
+![screencapture-expansemanager-netlify-app-signup-2023-01-19-12_22_03](https://user-images.githubusercontent.com/46422928/213375178-09da84be-3504-4897-b7ae-3f922a1fca87.png)
+
+## Dashboard 
+
+
+![screencapture-expansemanager-netlify-app-dashboard-2023-01-19-12_23_13](https://user-images.githubusercontent.com/46422928/213375256-e898f562-e298-4658-bd66-9ba0f7884761.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
